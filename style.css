@@ -1,0 +1,16 @@
+
+:root{--navy:#07182b;--navy2:#0d2741;--gold:#d7ad55;--cream:#f6f1e7;--ink:#122033}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+header{height:86px;background:var(--navy);display:flex;align-items:center;padding:10px 5vw;gap:30px;position:sticky;top:0;z-index:10}
+.brand img{width:190px;height:62px;object-fit:cover;object-position:center}nav{display:flex;gap:25px;margin-left:auto}nav a{color:white;text-decoration:none;font-size:14px}
+.button{display:inline-block;background:var(--gold);color:var(--navy);padding:14px 22px;border-radius:4px;text-decoration:none;font-weight:700}.button.small{padding:10px 16px}.button.outline{background:transparent;color:white;border:1px solid var(--gold)}
+.hero{min-height:650px;background:linear-gradient(90deg,rgba(5,18,34,.97),rgba(5,18,34,.68),rgba(5,18,34,.15)),radial-gradient(circle at 80% 25%,#b68d50,#233f56 28%,#07182b 70%);color:white;display:flex;align-items:center;padding:8vw}
+.hero-inner{max-width:700px}.eyebrow{letter-spacing:.2em;font-size:12px;color:var(--gold);font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(52px,7vw,92px);line-height:.98;margin:.2em 0}.lead{font-family:Georgia,serif;font-size:22px}.actions{display:flex;gap:12px;margin-top:30px}
+.intro{text-align:center;max-width:850px;margin:auto;padding:90px 25px}.intro h2,.split h2,.faq h2,.contact h2{font:46px Georgia,serif;color:var(--navy)}
+.cards{display:grid;grid-template-columns:1fr 1fr;background:var(--navy);color:white}.cards article{padding:70px 8vw;min-height:340px;border-right:1px solid #345}.cards h2{font:38px Georgia,serif}.cards span,.cards a{color:var(--gold)}
+.split{display:grid;grid-template-columns:1.5fr 1fr;gap:70px;padding:100px 8vw}.split aside{border-left:1px solid #cdbb98;padding-left:50px;font:20px Georgia,serif}
+.quote{text-align:center;background:white;padding:100px 20px}.quote blockquote{max-width:800px;margin:25px auto;font:italic 34px Georgia,serif;color:var(--navy)}
+.faq{max-width:900px;margin:auto;padding:100px 25px}.faq details{border-top:1px solid #cabfa9;padding:20px 0}.faq summary{font-weight:700;cursor:pointer}
+.contact{text-align:center;background:var(--navy2);color:white;padding:100px 20px}.contact h2{color:white}
+footer{background:#04111f;color:#ddd;text-align:center;padding:50px}footer img{width:240px}
+@media(max-width:800px){header{height:auto;flex-wrap:wrap}.brand img{width:150px}nav{display:none}.hero{min-height:590px;padding:70px 25px}.cards,.split{grid-template-columns:1fr}.cards article{border-right:0;border-bottom:1px solid #345}.split{padding:70px 25px;gap:30px}.split aside{padding-left:25px}.actions{flex-direction:column;align-items:flex-start}}
